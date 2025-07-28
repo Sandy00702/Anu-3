@@ -79,41 +79,41 @@ export default function BirthdayCelebration() {
 
           {/* Card Inner Message */}
           <AnimatePresence>
-            {isCardOpen && (
-              <motion.div
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl px-6 py-8 sm:px-10 shadow-xl shadow-rose-100 w-fit max-w-[90%] text-center z-10"
-                initial={{ rotate: 2, rotateX: -90, opacity: 0 }}
-                animate={{
-                  rotate: 0,
-                  rotateX: 0,
-                  opacity: 1,
-                }}
-                exit={{ rotateX: -90, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <p className="text-purple-700 mb-3">
-                  Just wanted to remind you—you're my favorite person. My days are better, smiles are wider, and life is sweeter because of you.
-                </p>
-                <p className="text-pink-600 font-medium mb-2">
-                  I hope your birthday is full of love, magic, and everything that makes you smile 💖
-                </p>
-                <a
-                  href="https://drive.google.com/file/d/1uz4zVPH_LQmOvZBsSZBHpU9Mg9UWwoRw/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-600 font-medium underline block mb-4"
-                >
-                  Click me, I have a small surprise for you
-                </a>
-                <motion.div
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                >
-                  <Heart className="w-8 h-8 stroke-none fill-rose-500 mx-auto" />
-                </motion.div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+  {isCardOpen && (
+    <motion.div
+      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl px-6 py-8 sm:px-10 shadow-xl shadow-rose-100 w-fit max-w-[90%] text-center z-10"
+      initial={{ rotate: 2, rotateX: -90, opacity: 0 }}
+      animate={{
+        rotate: 0,
+        rotateX: 0,
+        opacity: 1,
+      }}
+      exit={{ rotateX: -90, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-purple-700 mb-3">
+        Just wanted to remind you—you're my favorite person. My days are better, smiles are wider, and life is sweeter because of you.
+      </p>
+      <p className="text-pink-600 font-medium mb-2">
+        I hope your birthday is full of love, magic, and everything that makes you smile 💖
+      </p>
+      <a
+        href="https://drive.google.com/file/d/1uz4zVPH_LQmOvZBsSZBHpU9Mg9UWwoRw/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-pink-600 font-medium underline block mb-4"
+      >
+        Click me, I have a small surprise for you
+      </a>
+      <motion.div
+        animate={{ scale: [1, 1.2, 1] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        <Heart className="w-8 h-8 stroke-none fill-rose-500 mx-auto" />
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
         </div>
       </motion.div>
 
